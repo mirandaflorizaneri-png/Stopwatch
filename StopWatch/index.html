@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Precision Stopwatch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pulse-bg"></div>
+
+<header class="page-header">
+  <h1 class="page-title">StopWatch</h1>
+</header>
+
+<div class="stopwatch">
+    <div id="time" class="time">00:00:00.000</div>
+
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="stop" disabled>Stop</button>
+      <button id="reset" disabled>Reset</button>
+      <button id="lap" disabled>Lap</button>
+    </div>
+
+    <hr class="divider">
+
+    <ul id="laps" aria-live="polite"></ul>
+</div>
+
+<section class="records-wrap">
+  <h2>Recent Records</h2>
+  <div id="records" class="records"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
